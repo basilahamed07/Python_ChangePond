@@ -74,6 +74,3 @@ def neestList():
     print(nestedlist[3][0])
     print(nestedlist[3][-1])
 # neestList()
-
-
-# 
