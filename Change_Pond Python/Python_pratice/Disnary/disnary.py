@@ -80,6 +80,79 @@ def _nested_dicts():
         
     print(user['basil ahamed']['name'],user['basil ahamed']['location'])
 # _nested_dicts()   
-  
-def _method_dicts():
-    pass
+
+def dict_methods():
+    #.get() it will return the value of the key
+    #.value() it will return the all the value of the dicts
+    #.keys() it will return the all the keys
+    #.items() it will return the result in tuple and cnclosed with list
+    user = {
+    'basil ahamed':{
+        'name':"basil",
+        "age":21,
+        'location':"chennai"
+    },
+    'basilahamed':{
+        'name':"ahamed",
+        "age":22,
+        'location':"usa"
+    },
+    'ahamedbasil':{
+        'name':"ahamed basils",
+        "age":20,
+        'location':"canada"
+    }            
+}
+    #it will return the key on dict
+    def key_method(user):
+        keys = user.keys()
+        print()
+        print("printing the keys() method result")
+        print(keys)
+        
+    # it will retuen the values of dicts 
+    def values_method(user):
+        keys = user.values()
+        print()
+        print("printing the values() method result")
+        print(keys)
+    
+    #it will get the values by using the values
+    def get_method(user):
+        keys = user.get('basil ahamed')
+        print()
+        print("printing the get() method result")
+        print(keys)
+        
+    # it will return the result in tuple and cnclosed with list
+    def item_mehod(user):
+        keys = user.items()
+        print()
+        print("printing the items() method result")
+        print(keys)   
+        
+     #pop method will remove the values by using the key
+    def pop_method(user):
+        
+        # keys = user.pop('basil ahamed')
+        user.pop('basil ahamed')
+        print()
+        print("printing the pop() method result")
+        # print(keys)
+        print(user)
+    
+    #update method
+    # it will return the result in tuple and cnclosed with list
+    def update_method(user):
+        user.update({'basil ahamed':{'name':"ahamed basil",'age':77, 'location':"canada"}})
+        print()
+        print("printing the update() method result")
+        print(user)   
+     #calling the function
+    key_method(user)
+    values_method(user)
+    get_method(user)
+    item_mehod(user)
+    pop_method(user)
+    update_method(user)
+dict_methods()
