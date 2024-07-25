@@ -11,3 +11,13 @@ Lamda_function(anonymous function ): -> function withoud function name
 -> this function can take any number arguments but only ony one expression which is evaluated but only one expression which is evaluated and returned
 
 syntax: lambda function 
+
+
+#map function
+map function return a map object(which is an itrable) of the result
+after applying the given function to each items of given  itrable(list,tuple,etc)
+or allow you to process and transforms all the items in an iterable
+without using an explict for liip , a technique commonly know as mapping
+
+syntax:
+map(function,itrable,[iterable1,iterable2,iterable3])
