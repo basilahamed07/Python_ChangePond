@@ -1,13 +1,15 @@
 import os
-import filecmp
 
 
 def del_file(file_name):
-    os.remove(file_name)
-    print("File removed....")
-
+    if os.path.exists(file_name):
+        os.remove(file_name)
+        print("File removed....")
+    else:
+        print(f'{file_name} is not exixt')
 def file_namess():
-    return input("Enter the file_name: ")
+    vale = input("Enter the file_name: ")
+    return vale
 
 
 
