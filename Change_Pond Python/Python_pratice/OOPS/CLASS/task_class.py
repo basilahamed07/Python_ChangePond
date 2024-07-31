@@ -10,34 +10,21 @@ def task_1(values):
             self.__id = self._product_id
             print("Prodect add sucessfully")
         def get_product_names(self):
+            print("*" * 50,self.__id,"*" * 50)
             print(f"product name: {self.pname}")
             print(f"product price: {self.pprice}")
             print(f"product description: {self.pdesc}")
             print(f"product id: {self.__id}")
     
-    
+    lists = []
     for trash in range(1,values+1):
-        
-    product_1 = Prodect()
-    product_1.add_function(pname=input("Enter the product name: "),
+        lists+=[f"product_{trash}"]
+    for trash in lists:
+        trash = Prodect()
+        trash.add_function(pname=input("Enter the product name: "),
                            pprice=int(input("Enter the product price: ")),
                            pdesc=input("Enter the product description: "))
-    product_1.get_product_names()
-    product_2 = Prodect()
-    product_2.add_function(pname=input("Enter the product name: "),
-                           pprice=int(input("Enter the product price: ")),
-                           pdesc=input("Enter the product description: "))
-    product_2.get_product_names()
-    product_3 = Prodect()
-    product_3.add_function(pname=input("Enter the product name: "),
-                           pprice=int(input("Enter the product price: ")),
-                           pdesc=input("Enter the product description: "))
-    product_3.get_product_names()
-    product_4 = Prodect()
-    product_4.add_function(pname=input("Enter the product name: "),
-                           pprice=int(input("Enter the product price: ")),
-                           pdesc=input("Enter the product description: "))
-    product_4.get_product_names()
+        trash.get_product_names()
 
 def main():
     task_1(int(input("How many Product you like to add: ")))
