@@ -16,7 +16,7 @@ def randome_generate(secure_value):
         for trash in secure_value:
             if trash == user_input[index]:
                 cow+=1
-                checklist+=[trash]
+                checklist+=[trash]  
             elif user_input[index] in secure_value and user_input[index] not in checklist:
                 bull+=1
                 checklist+=[user_input[index]]
