@@ -30,13 +30,13 @@ def guess_game(randome_words):
                 # print("Error Characters:")
                 continue
             elif characters == randome_words[trash]:
-                if characters in result:
-                    continue
-                else:
-                    print("Correct Answer")
-                    result[trash] = characters
-                    print(result)
-                    count+=1
+                # if characters in result:
+                #     continue
+                
+                print("Correct Answer")
+                result[trash] = characters
+                print(result)
+                count+=1
         if count == len(randome_words):
             break
     print(result)
