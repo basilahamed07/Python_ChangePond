@@ -22,12 +22,20 @@ class BankAccount:
     def Display(self):
         print("Name:", self.name)
         print("Balance Amount:", self.amount)
-
+ 
+    @staticmethod
+    def disply_kyc(aadhar,photo,documents):
+        print(aadhar)
+        print(photo)
+        print(documents)
+   
+ 
 bank_1 = BankAccount()
 bank_1.Deposit()
 bank_1.Withdraw()
 bank_1.CalculateIntersest()
 bank_1.Display()
+bank_1.disply_kyc(213457684567,"photo.jpg","driving_licance")
 
 bank_2 = BankAccount()
 bank_2.Deposit()
