@@ -22,17 +22,21 @@ class Arithmetic:
             else:
                 result = False
                 break
-        return result
+        return f"{self.values} is {result}"
     def checkperfect(self):
-        pass
-        # return True
+        lists = [trash for trash in range(1,self.values) if self.values%trash == 0]
+        if self.values == sum(lists):
+            return f"the {self.values} is perfact number"
+        else:
+            return f"the {self.values} is not perfact number"
     def sumfactors(self):
-        pass
-        # return True
+        sums = [trash for trash in range(1,self.values+1) if self.values%trash == 0]
+        return f"the sum of factor {sum(sums)}"
     def factoes(self):
-        pass
-        # return True
-obj1=Arithmetic(4)
+        factors = [i for i in range(1, self.value) if self.value % i == 0]
+        print(f"Factors of {self.value}: {factors}")
+obj1=Arithmetic(6)
 print(obj1.checkPrime())
-    
+print(obj1.checkperfect())
+        
     
